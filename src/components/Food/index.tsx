@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, {useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
@@ -15,7 +15,7 @@ interface FoodChoiceProps {
 
 interface FoodProps {
   food:FoodChoiceProps;
-  available: FoodChoiceProps;
+  
   handleDelete: (id: number) => {};
   handleEditFood: (food: FoodChoiceProps ) => void;
 }

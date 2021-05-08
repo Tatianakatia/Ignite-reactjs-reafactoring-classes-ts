@@ -13,15 +13,15 @@ interface FoodChoiceProps {
   description: string;
   image: string;
   price: string;
-  available: boolean;
+  available: boolean;  
 };
 
-interface DashboardProps {
-  food: FoodChoiceProps;
+// interface DashboardProps {
+//   food: FoodChoiceProps;
   // handleDelete: (id: number) => {};
   // handleEditFood: (food: FoodChoiceProps ) => void;
 
-}
+// }
 
 const Dashboard: React.FC = () => {
   const [foods, setFoods] = useState<FoodChoiceProps[]>([]);
